@@ -2,7 +2,7 @@
 
 namespace Firebed\AadeMyData\Models\Statements;
 
-use Firebed\AadeMyData\Enums\RecallStatus;
+use Firebed\AadeMyData\Enums\Statements\RecallStatus;
 use Firebed\AadeMyData\Models\Type;
 
 /**

@@ -1,6 +1,8 @@
 <?php
 
-namespace Firebed\AadeMyData\Enums;
+namespace Firebed\AadeMyData\Enums\Statements;
+
+use Firebed\AadeMyData\Enums\HasLabels;
 
 /**
  * Τύπος Ανάκλησης

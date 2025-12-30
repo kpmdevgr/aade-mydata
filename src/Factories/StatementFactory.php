@@ -2,7 +2,7 @@
 
 namespace Firebed\AadeMyData\Factories;
 
-use Firebed\AadeMyData\Enums\ProviderType;
+use Firebed\AadeMyData\Enums\Statements\ProviderType;
 use Firebed\AadeMyData\Models\Statements\Statement;
 
 /**
