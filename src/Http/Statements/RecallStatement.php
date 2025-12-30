@@ -2,7 +2,7 @@
 
 namespace Firebed\AadeMyData\Http\Statements;
 
-use Firebed\AadeMyData\Enums\RecallStatus;
+use Firebed\AadeMyData\Enums\Statements\RecallStatus;
 use Firebed\AadeMyData\Exceptions\MyDataAuthenticationException;
 use Firebed\AadeMyData\Exceptions\MyDataException;
 use Firebed\AadeMyData\Http\MyDataRequest;

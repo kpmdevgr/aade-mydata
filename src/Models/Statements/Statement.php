@@ -2,7 +2,8 @@
 
 namespace Firebed\AadeMyData\Models\Statements;
 
-use Firebed\AadeMyData\Enums\ProviderType;
+use Firebed\AadeMyData\Enums\Statements\LiableUserCategory;
+use Firebed\AadeMyData\Enums\Statements\ProviderType;
 use Firebed\AadeMyData\Models\Type;
 use Firebed\AadeMyData\Traits\HasFactory;
 use Firebed\AadeMyData\Xml\Statements\StatementDocWriter;
@@ -18,7 +19,7 @@ class Statement extends Type
      * @var array<string, class-string>
      */
     protected array $casts = [
-        'liableUserCategory' => ProviderType::class,
+        'liableUserCategory' => LiableUserCategory::class,
         'providerType' => ProviderType::class,
     ];
 
@@ -77,18 +78,18 @@ class Statement extends Type
     }
 
     /**
-     * @return ProviderType|null Κατηγορία Υπόχρεου
+     * @return LiableUserCategory|null Κατηγορία Υπόχρεου
      */
-    public function getLiableUserCategory(): ?ProviderType
+    public function getLiableUserCategory(): ?LiableUserCategory
     {
         return $this->get('liableUserCategory');
     }
 
     /**
-     * @param  ProviderType|int  $liableUserCategory  Κατηγορία Υπόχρεου
+     * @param  LiableUserCategory|int  $liableUserCategory  Κατηγορία Υπόχρεου
      * @return static
      */
-    public function setLiableUserCategory(ProviderType|int $liableUserCategory): static
+    public function setLiableUserCategory(LiableUserCategory|int $liableUserCategory): static
     {
         return $this->set('liableUserCategory', $liableUserCategory);
     }
